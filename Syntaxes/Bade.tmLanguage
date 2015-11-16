@@ -1129,6 +1129,14 @@
 						</dict>
 						<dict>
 							<key>include</key>
+							<string>#tag_text</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#inline_bade_text</string>
+						</dict>
+						<dict>
+							<key>include</key>
 							<string>#complete_tag</string>
 						</dict>
 					</array>
