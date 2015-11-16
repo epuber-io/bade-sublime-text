@@ -1,1 +1,10 @@
-{"platforms": ["*"], "description": "A comprehensive textmate / sublime text bundle for the Jade template language.", "sublime_text": "*", "url": "https://github.com/davidrios/jade-tmbundle", "dependencies": [], "version": "2015.10.26.14.05.00"}
+{
+    "dependencies": [],
+    "description": "A sublime text bundle for the Bade template language.",
+    "platforms": [
+        "*"
+    ],
+    "sublime_text": "*",
+    "url": "https://github.com/epuber-io/bade-sublime-text",
+    "version": "0.1"
+}
