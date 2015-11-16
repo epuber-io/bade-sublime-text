@@ -30,10 +30,10 @@
     {
       "begin": "^(\\s*)-$",
       "end": "^(?!(\\1\\s)|\\s*$)",
-      "name": "source.js",
+      "name": "source.ruby",
       "comment": "Unbuffered code block.",
       "patterns": [
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     {
@@ -55,7 +55,7 @@
           "name": "stuff.tag.script.bade",
           "patterns": [{ "include": "#complete_tag" }]
         },
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     {
@@ -244,7 +244,7 @@
       "name": "js.value.attribute.tag.bade",
       "patterns": [
         { "include": "#brackets_js" },
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     "filter_args": {
@@ -288,13 +288,13 @@
       "begin": "(-|(([a-zA-Z0-9_]+)\\s+=))",
       "beginCaptures": { "3": { "name": "variable.parameter.javascript.embedded.bade" } },
       "end": "(?=\\])|$",
-      "name": "source.js",
+      "name": "source.ruby",
       "comment": "Non-buffered executable code. Ex.:",
       "comment": "- var name = 'value';",
       "comment": "name = function() {}",
       "patterns": [
         { "include": "#brackets_js" },
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     "mixins": {
@@ -331,7 +331,7 @@
           "begin": "",
           "end": "$",
           "name": "js.embedded.control.flow.bade",
-          "patterns": [{ "include": "source.js" }]
+          "patterns": [{ "include": "source.ruby" }]
         }
       ]
     },
@@ -345,7 +345,7 @@
           "match": ":",
           "name": "invalid.illegal.name.tag.bade"
         },
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     "case_conds": {
@@ -361,7 +361,7 @@
           "name": "js.embedded.control.flow.bade",
           "patterns": [
             { "include": "#case_when_paren" },
-            { "include": "source.js" }
+            { "include": "source.ruby" }
           ]
         },
         {
@@ -416,7 +416,7 @@
               "match": "{",
               "name": "invalid.illegal.tag.bade"
             },
-            { "include": "source.js" }
+            { "include": "source.ruby" }
           ]
         }
       ]
@@ -452,7 +452,7 @@
             { "include": "#tag_attribute_value_brackets" },
             { "include": "#tag_attribute_value_braces" },
             { "include": "#string" },
-            { "include": "source.js" }
+            { "include": "source.ruby" }
           ]
         }
       ]
@@ -467,7 +467,7 @@
           "match": "attributes(?=\\))",
           "name": "storage.type.keyword.bade"
         },
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     "tag_attribute_value_paren": {
@@ -479,7 +479,7 @@
         { "include": "#tag_attribute_value_brackets" },
         { "include": "#tag_attribute_value_braces" },
         { "include": "#string" },
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     "tag_attribute_value_brackets": {
@@ -491,7 +491,7 @@
         { "include": "#tag_attribute_value_brackets" },
         { "include": "#tag_attribute_value_braces" },
         { "include": "#string" },
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     "tag_attribute_value_braces": {
@@ -503,7 +503,7 @@
         { "include": "#tag_attribute_value_brackets" },
         { "include": "#tag_attribute_value_braces" },
         { "include": "#string" },
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     "tag_text": {
@@ -591,7 +591,7 @@
           "match": "{",
           "name": "invalid.illegal.tag.bade"
         },
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     "interpolated_error": {
@@ -602,10 +602,10 @@
       "begin": "(!?\\=)\\s*",
       "captures": { "1": { "name": "constant" } },
       "end": "(?=\\])|$",
-      "name": "source.js",
+      "name": "source.ruby",
       "patterns": [
         { "include": "#brackets_js" },
-        { "include": "source.js" }
+        { "include": "source.ruby" }
       ]
     },
     "string": {
