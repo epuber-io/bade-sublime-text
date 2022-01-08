@@ -1,0 +1,39 @@
+{
+    "name": "bade-lang",
+    "displayName": "Bade language",
+    "description": "Support for Bade templating language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/epuber-io/bade-sublime-text"
+    },
+    "publisher": "epuber",
+    "contributes": {
+        "languages": [
+            {
+                "id": "bade",
+                "aliases": [
+                    "Bade",
+                    "bade"
+                ],
+                "extensions": [
+                    ".bade"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "bade",
+                "scopeName": "text.bade",
+                "path": "./Syntaxes/Bade.tmLanguage"
+            }
+        ]
+    }
+}
