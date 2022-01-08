@@ -1084,7 +1084,7 @@
 		<key>mixins</key>
 		<dict>
 			<key>begin</key>
-			<string>(((mixin\s+)|\+)([\w-]+))\s*</string>
+			<string>(((mixin\s+)|\+)([\w-]+))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>2</key>
